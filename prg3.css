@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to right, #3E5151 ,#DECBA4);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 100px rgb(232, 167, 26);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+h1::after{
+    content:'';
+    display: block;
+    height: 4px;
+    width:100%;
+    background-color: lightyellow;
+    transform:scale(0);
+    transition: transform 0.4s ease;
+}
+h1:hover::after{
+    transform: scalex(1);
+}
+
+.task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+#add-task {
+    padding: 10px 20px;
+    background-color: #965ac886;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.task-item button {
+    background-color: #287da1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.task-item.completed {
+    background-color: #28a745;
+    color: #fff;
+}
+.Contact-us {
+    color: #1154b9;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+#contact{
+    text-align: center;
+}
+h2::after{
+    content:'';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(127, 127, 72);
+    transform:scale(0);
+    transition: transform 0.4s ease;
+}
+h2:hover::after{
+    transform: scalex(1);
+}
+#link{
+    background-color:;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    cursor: pointer;
+    margin-left: 2px;
+}
